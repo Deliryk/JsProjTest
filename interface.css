@@ -1,0 +1,68 @@
+<style>
+#Progress{
+	width:90%;
+	background-color:#ededed;
+	border-radius:40px;
+}
+
+#ProgressBar{
+	width:0%;
+	height:30px;
+	background-color:rgb(255, 255, 255);
+	line-height:30px;
+	color:black;
+	border-radius:40px;
+	z-index: 1;
+}
+
+#ProgressBarMiddle  {
+	width: 100%;
+    color: black; 
+    text-align: center;
+    z-index: 2;
+	display: inline-block;
+}
+
+.MainClick{
+    display: inline-block;
+    position: relative;
+    padding: 0.35em 1em;
+    background: #555555;
+    color: white;
+    text-decoration: none;
+}
+
+.MainClick:hover {
+  background-color: #969696; 
+  color: black;
+}
+
+.MainClick:before{
+    content: "";
+    position: absolute;
+    top: -16px;
+    left: 0;
+    width: -webkit-calc(100% - 16px);
+    width: calc(100% - 16px);
+    height: 0;
+    border: solid 8px transparent;
+    border-bottom-color: #8eacec;
+}
+
+.MainClick:active{
+    padding: 0.32em 0.9em;
+    -ms-transform: translateY(-2px);
+    -webkit-transform: translateY(-2px);
+    transform: translateY(-2px);
+}
+
+.MainClick:active:before{ 
+    width: -webkit-calc(100% - 12px);
+    width: calc(100% - 12px);
+}
+
+.MainClick:active:before{
+   top:-12px;
+   border-width: 6px;
+}
+</style>

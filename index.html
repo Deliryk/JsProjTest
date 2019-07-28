@@ -1,0 +1,30 @@
+<html>
+	<head>
+		<link rel="stylesheet" type="text/css" href="interface.css" />
+	</head>
+	<body>
+		<div id="Progress">
+			<div id="ProgressBar"><span id="ProgressBarMiddle">0.00%</span></div>
+		</div>
+		<br>
+		<a href="#" class="mainClick" onclick="cookieClick(1);moveProgressBar()">Click Me!</a>
+		<br>
+		Cookies: <span id="cookies">0</span> 
+		<br>
+		Passive CPS: <span id="cookiesPS">0.00</span>
+		<br>
+		<button onclick="buyCursor();updateCursorValue();moveProgressBar();moveCookiesPS();">Buy Cursor</button>
+		<br>
+		Cursors: <span id="cursors">0</span>
+		<br>
+		Cursor Cost: <span id="cursorCost">10</span>
+		<br>
+		<br>
+		<br>
+		<button onclick="saveGame()">Save</button>
+		<br>
+		<button onclick="loadGame();updateCursorValue();moveProgressBar();moveCookiesPS();">Load</button>
+		<br>
+		<script type="text/javascript" src="main.js"></script>
+	</body>
+</html>
